@@ -9,7 +9,7 @@ export default function SpaceMissionForm(){
             <h2>Space Mission Registration</h2>
 
             <div>
-                <label htmlFor="planet name">Planet Name:</label>
+                <label htmlFor="planet name">Planet Name:</label>                
             <select value = {planet} onChange={(e)=> setPlanet(e.target.value)}>
         <option value="Mars">Mars</option>
         <option value="Venus">Venus</option>
@@ -20,7 +20,10 @@ export default function SpaceMissionForm(){
 
 
       <div>
+        <p>Please enter your name to start your mission.</p>
+        
         <label htmlFor="austronaut name">Austronaut Name:</label>
+        
       <input
         type="text"
         placeholder="Astronaut name"
