@@ -5,12 +5,16 @@ import Goodbye from './components/Goodbye/Goodbye';
 import Tool from './components/Tool/Tool';
 import ProfileCard from './components/ProfileCard/Profilecard';
 import IdealWeightCalculator from './components/IdealWeightCalculator/IdealWeightCalculator';
+import SpaceMissionForm from './components/SpaceMissionForm/SpaceMissionForm';
+
 function App() {
   return (
   <>
   <p>Hello, World!</p>
   <Tool />
   <IdealWeightCalculator/ >
+  <SpaceMissionForm/ >
+
   <ProfileCard
   avatar="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=100&h=100"
   name="Sarah"
