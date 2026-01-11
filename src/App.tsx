@@ -4,38 +4,35 @@ import Counter from './components/Counter/Counter';
 import Goodbye from './components/Goodbye/Goodbye';
 import Tool from './components/Tool/Tool';
 import ProfileCard from './components/ProfileCard/Profilecard';
-
-
-
+import IdealWeightCalculator from './components/IdealWeightCalculator/IdealWeightCalculator';
 function App() {
   return (
   <>
   <p>Hello, World!</p>
-
   <Tool />
-
+  <IdealWeightCalculator/ >
   <ProfileCard
   avatar="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=100&h=100"
-  name="Marry"
+  name="Sarah"
   description="Frontend developer"
 />
-
 <ProfileCard
   avatar="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&h=100"
   name="Natalie"
   description="React student"
 />
-   {/* <Greetings name ="Sarah"/>
-   <Greetings name = "Natalie"/>     */}
-
-   <Goodbye familyName="Poppins" score={90}/>
-   <Goodbye familyName="Imbruglia" />
-
+   {/* <Greetings name ="Natalie"/>
+   <Greetings name = "Alisher"/>     */}
+   <Goodbye familyName="Istomina" score={90}/>
+   <Goodbye familyName="Istomina" />
    <Counter/>
    <Counter/>
+   
   </>
   );
-      
 }
-
 export default App;
+
+
+
+
