@@ -29,7 +29,7 @@ export default function NationalityReveal() {
     const res = await fetch(`https://api.nationalize.io/?name=${name}`);
     const data = await res.json();
     
-    // Преобразуем страны в человекочитаемый формат
+    
     const transformedData = {
       ...data,
       country: data.country.map((c: any) => ({

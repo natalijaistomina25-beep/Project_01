@@ -1,3 +1,5 @@
+
+
 import { useEffect, useState } from "react";
 
 export default function RandomDog() {
@@ -16,7 +18,7 @@ export default function RandomDog() {
 
   return (
     <div>
-      <h2>Random Dog</h2>
+      
       <img src={image} alt="dog" />
     </div>
   );
