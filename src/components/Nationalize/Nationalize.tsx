@@ -3,6 +3,7 @@ import type NationalityInfo from "./types/NationalityInfo";
 import NationalityResults from "./NationalityResults";
 
 export default function Nationalize(country_id: string) {
+  console.log(country_id);
   const [name, setName] = useState<string>("");
   const [natinalityInfo, setNationalityInfo] = useState<
     undefined | NationalityInfo
