@@ -29,6 +29,9 @@ export default function NavBar() {
       <NavLink to={"/profile"} className={navLinkClass}>
         Profile
       </NavLink>
+      <NavLink to={"/users"} className={navLinkClass}>
+        UserList
+      </NavLink>
     </nav>
   );
 }
