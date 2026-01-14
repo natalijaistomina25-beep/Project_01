@@ -1,53 +1,33 @@
-// import { NavLink } from "react-router-dom";
-// import s from "./NavBar.module.css";
-
-// export default function NavBar() {
-//   return (
-//     <nav className={s.container}>
-//       <NavLink to={"/"} className={s.link}>
-//         Home
-//       </NavLink>
-//       <NavLink to={"/counter"} className={s.link}>
-//         Counter
-//       </NavLink>
-//       <NavLink to={"/nationalityReveal"} className={s.link}>
-//         NationalityReveal
-//         </NavLink>
-//          <NavLink to={"/space-mission"} className={s.link}>
-//         SpaceMissionForm
-//       </NavLink>
-//     </nav>
-//   );
-// }
-
 import { NavLink } from "react-router-dom";
 import s from "./NavBar.module.css";
+import clsx from "clsx";
+
+const navLinkClass = ({ isActive }: { isActive: boolean }) =>
+  clsx(s.link, isActive && s.active);
 
 export default function NavBar() {
   return (
     <nav className={s.container}>
-      <NavLink to="/" end className={({ isActive }) => isActive ? s.activeLink : s.link}>
+      <NavLink to={"/"} className={navLinkClass}>
         Home
       </NavLink>
-
-      <NavLink to="/counter" className={({ isActive }) => isActive ? s.activeLink : s.link}>
+      <NavLink to={"/counter"} className={navLinkClass}>
         Counter
       </NavLink>
-
-      <NavLink to="/nationality-reveal" className={({ isActive }) => isActive ? s.activeLink : s.link}>
-        Nationality Reveal
+      <NavLink to={"/nationalize"} className={navLinkClass}>
+        Nationalize
       </NavLink>
-
-      <NavLink to="/space-mission" className={({ isActive }) => isActive ? s.activeLink : s.link}>
+      <NavLink to={"/space-mission"} className={navLinkClass}>
         Space Mission
       </NavLink>
-
-      <NavLink to="/about" className={({ isActive }) => isActive ? s.activeLink : s.link}>
+      <NavLink to={"/contacts"} className={navLinkClass}>
+        Contacts
+      </NavLink>
+      <NavLink to={"/about"} className={navLinkClass}>
         About
       </NavLink>
-
-      <NavLink to="/contact" className={({ isActive }) => isActive ? s.activeLink : s.link}>
-        Contact
+      <NavLink to={"/profile"} className={navLinkClass}>
+        Profile
       </NavLink>
     </nav>
   );
