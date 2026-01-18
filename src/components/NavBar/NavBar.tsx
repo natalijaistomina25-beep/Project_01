@@ -32,6 +32,15 @@ export default function NavBar() {
       <NavLink to={"/users"} className={navLinkClass}>
         UserList
       </NavLink>
+      <NavLink to={"/signup"} className={navLinkClass}>
+        Signup
+      </NavLink>
+      <NavLink to={"/signin"} className={navLinkClass}>
+        SignIn
+      </NavLink>
+      <NavLink to={"/category"} className={navLinkClass}>
+        Category
+      </NavLink>
     </nav>
   );
 }
